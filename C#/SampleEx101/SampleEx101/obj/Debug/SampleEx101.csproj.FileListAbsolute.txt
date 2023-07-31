@@ -1,0 +1,8 @@
+C:\Users\striker\source\repos\TrainingDay\C#\SampleEx101\SampleEx101\bin\Debug\SampleEx101.exe.config
+C:\Users\striker\source\repos\TrainingDay\C#\SampleEx101\SampleEx101\bin\Debug\SampleEx101.exe
+C:\Users\striker\source\repos\TrainingDay\C#\SampleEx101\SampleEx101\bin\Debug\SampleEx101.pdb
+C:\Users\striker\source\repos\TrainingDay\C#\SampleEx101\SampleEx101\obj\Debug\SampleEx101.csproj.AssemblyReference.cache
+C:\Users\striker\source\repos\TrainingDay\C#\SampleEx101\SampleEx101\obj\Debug\SampleEx101.csproj.SuggestedBindingRedirects.cache
+C:\Users\striker\source\repos\TrainingDay\C#\SampleEx101\SampleEx101\obj\Debug\SampleEx101.csproj.CoreCompileInputs.cache
+C:\Users\striker\source\repos\TrainingDay\C#\SampleEx101\SampleEx101\obj\Debug\SampleEx101.exe
+C:\Users\striker\source\repos\TrainingDay\C#\SampleEx101\SampleEx101\obj\Debug\SampleEx101.pdb
