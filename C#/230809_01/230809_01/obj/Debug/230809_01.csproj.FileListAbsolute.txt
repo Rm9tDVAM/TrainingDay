@@ -1,0 +1,8 @@
+C:\Users\striker\source\repos\TrainingDay\C#\230809_01\230809_01\bin\Debug\230809_01.exe.config
+C:\Users\striker\source\repos\TrainingDay\C#\230809_01\230809_01\bin\Debug\230809_01.exe
+C:\Users\striker\source\repos\TrainingDay\C#\230809_01\230809_01\bin\Debug\230809_01.pdb
+C:\Users\striker\source\repos\TrainingDay\C#\230809_01\230809_01\obj\Debug\230809_01.csproj.AssemblyReference.cache
+C:\Users\striker\source\repos\TrainingDay\C#\230809_01\230809_01\obj\Debug\230809_01.csproj.SuggestedBindingRedirects.cache
+C:\Users\striker\source\repos\TrainingDay\C#\230809_01\230809_01\obj\Debug\230809_01.csproj.CoreCompileInputs.cache
+C:\Users\striker\source\repos\TrainingDay\C#\230809_01\230809_01\obj\Debug\230809_01.exe
+C:\Users\striker\source\repos\TrainingDay\C#\230809_01\230809_01\obj\Debug\230809_01.pdb
