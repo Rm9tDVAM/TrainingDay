@@ -14,6 +14,7 @@ namespace _01c085
             // string line2 = Console.ReadLine();
             string[] line1 = { "1", "3","2","6","3","5","5","6","2","6","0","4","5","2","4","2","1","2","4","0","4","2","2","5","0","2" };
             string line2 = "abcabcabcabc";
+
         }
     }
 }
