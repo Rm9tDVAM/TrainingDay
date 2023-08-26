@@ -19,11 +19,11 @@ namespace _01c085
             Hashtable ht=new Hashtable();
             for (int i = 0; i < line1.Length; i++)
             {
-                ht.Add(atoz[i], line1[i]);
+                ht.Add(atoz.Substring(i,1), line1[i]);
             }
-            foreach(var key in ht.Keys)
+            for (int i=0;i<line1.Length; i++)
             {
-                Console.Write(key);
+                Console.WriteLine(ht[atoz.Substring(i,1)]);
             }
         }
     }
