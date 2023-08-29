@@ -18,13 +18,20 @@ namespace _01c085
             string line2 = "abcabcabcabc";
             var atoz = string.Concat(Enumerable.Range('a', 26).Select(c =>(char)c));
             Hashtable ht=new Hashtable();
+            int temp;
             for (int i = 0; i < line1.Length; i++)
             {
                 ht.Add(atoz.Substring(i,1), line1[i]);
             }
             for(int i=0;i<line2.Length ; i++)
             {
-                Console.WriteLine(ht[line2.Substring(i,1)]);
+                Console.Write(int.Parse((string)ht[line2.Substring(i, 1)]) );
+                if (int.Parse((string)ht[line2.Substring(i, 1)]) != 0)
+                {
+                    Console.WriteLine(line2.Substring(i,1));
+
+                    ht[line2.Substring(i, 1)] = (string)(object)(int.Parse((string)ht[line2.Substring(i, 1)]) - 1);;
+                }
             }
             //for (int i=0;i<line1.Length; i++)
             //{
