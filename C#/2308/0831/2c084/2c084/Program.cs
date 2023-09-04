@@ -10,8 +10,7 @@ namespace _2c084
     {
         static void Main(string[] args)
         {
-            //string line = Console.ReadLine();
-            string line = "Paiza";
+            string line = Console.ReadLine();
             int count = line.Length + 2;
             printLine(count);
             Console.WriteLine("+{0}+",line);
