@@ -10,9 +10,20 @@ namespace _2c084
     {
         static void Main(string[] args)
         {
-            string line=Console.ReadLine();
-            int lineCount = line.Length;
-
+            //string line = Console.ReadLine();
+            string line = "Paiza";
+            int count = line.Length + 2;
+            printLine(count);
+            Console.WriteLine("+{0}+",line);
+            printLine(count);
+        }
+        static void printLine(int count)
+        {
+            for(int i = 0; i < count; i++)
+            {
+                Console.Write("+");
+            }
+            Console.WriteLine();
         }
     }
 }
