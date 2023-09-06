@@ -25,10 +25,20 @@ namespace _02_c083
             for(int i = 0; i < list.Count; i ++)
             {
                 temp = list[i];
+                Console.Write(i+1 + ":");
                 for (int j = 0; j < max; j++)
                 {
-
+                    if (temp > 0)
+                    {
+                        Console.Write("*");
+                        temp--;
+                    }
+                    else
+                    {
+                        Console.Write(".");
+                    }
                 }
+                Console.WriteLine();
             }
         }
     }
