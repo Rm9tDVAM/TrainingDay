@@ -17,6 +17,7 @@ namespace _01_c082
             List<int>engList=new List<int>();
             List<int>jpnList=new List<int>();
             List<int>matList=new List<int>();
+            int ans = 0;
             string[] temp;
 
             //for(int i = 0; i < int.Parse(line[0]); i++)
@@ -34,16 +35,22 @@ namespace _01_c082
                 jpnList.Add(int.Parse(temp[1]));
                 matList.Add(int.Parse(temp[2]));
             }
-            foreach(int i in engList)
+            for(int i = 0; i < list.Count; i++)
             {
-                Console.WriteLine(i);
+                temp = list[i].Split(' ');
+                getNum(engList, int.Parse(line[1])-1);
+
             }
         }
-        class student
+        static int getNum(List<int> list,int index) 
         {
-            public int english;
-            public int japanese;
-            public int math;
+            List<int>tempList=new List<int>();
+            foreach(int i in list)
+            {
+                tempList.Add(i);
+            }
+            tempList.Sort();
+            return tempList[index];
         }
     }
 }
