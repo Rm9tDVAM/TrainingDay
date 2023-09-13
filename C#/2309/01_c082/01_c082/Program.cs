@@ -13,22 +13,19 @@ namespace _01_c082
         static void Main(string[] args)
         {
             string[] line = Console.ReadLine().Split(' ');
-            //string[] line = { "4","2" };
             List<string>list=new List<string>();
             List<int>engList=new List<int>();
             List<int>jpnList=new List<int>();
             List<int>matList=new List<int>();
             string[] temp;
+            int[] multiPoint = new int[3];
             int ans=0;
 
             for(int i = 0; i < int.Parse(line[0]); i++)
             {
                 list.Add(Console.ReadLine());
             }
-            //list.Add("80 60 40");
-            //list.Add("50 50 40");
-            //list.Add("80 50 40");
-            //list.Add("40 80 80");
+
             foreach (string i in list)
             {
                 temp = i.Split(' ');
@@ -37,23 +34,18 @@ namespace _01_c082
                 matList.Add(int.Parse(temp[2]));
             }
 
-            int engPoint = getNum(engList, int.Parse(line[1])-1);
-            int jpnPoint = getNum(jpnList, int.Parse(line[1])-1);
-            int matPoint = getNum(matList, int.Parse(line[1])-1);
+            multiPoint[0] = getNum(engList, int.Parse(line[1])-1);
+            multiPoint[1] = getNum(jpnList, int.Parse(line[1])-1);
+            multiPoint[2] = getNum(matList, int.Parse(line[1])-1);
             for(int i = 0; i < list.Count; i++)
             {
                 temp = list[i].Split(' ');
-                if (int.Parse(temp[0]) <= engPoint)
+                for(int j = 0; j < 3; j++)
                 {
-                    ans++;
-                }
-                if (int.Parse(temp[1]) <= jpnPoint)
-                {
-                    ans++;
-                }
-                if (int.Parse(temp[2]) <= matPoint)
-                {
-                    ans++;
+                    if (int.Parse(temp[j]) <= multiPoint[j])
+                    {
+                        ans++;
+                    }
                 }
                 Console.WriteLine(ans);
                 ans = 0;
