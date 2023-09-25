@@ -26,9 +26,6 @@ namespace c080
             {
                 if ((i + 1) % int.Parse(line1[0]) == 0)
                 {
-
-                    Console.WriteLine("{0} {1}", line1[0], line3[i]);
-
                     if (line1[0] == line3[i])
                     {
                         point += 1000;
@@ -37,12 +34,11 @@ namespace c080
                     {
                         limitPoint++;
                     }
-                    //Console.WriteLine(line1[0]);i
                 }
                 else
                 {   
-                    Console.WriteLine("{0} {1}", line1[0], line3[i]);
-                    if (i+1 == int.Parse(line3[i]))
+                    //Console.WriteLine("{0} {1}", (i + 1) % int.Parse(line1[0]), line3[i]);
+                    if ((i + 1) % int.Parse(line1[0]) == int.Parse(line3[i]))
                     {
                         point += 1000;
                     }
@@ -52,6 +48,8 @@ namespace c080
                     }
                     //Console.WriteLine((i + 1) % int.Parse(line1[0]));
                 }
+
+                //Console.WriteLine(limitPoint);
                 if (limit == limitPoint)
                 {
                     Console.WriteLine(-1);
