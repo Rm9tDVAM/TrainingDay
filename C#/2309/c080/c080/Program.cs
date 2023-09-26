@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Hosting;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,13 +12,9 @@ namespace c080
     {
         static void Main(string[] args)
         {
-            //string[] line1 = Console.ReadLine().Split(' ');
-            string[] line1 = {"4","2"};
-            //int line2 = int.Parse(Console.ReadLine());
-            int line2 = 6;
-            //string[] line3 = Console.ReadLine().Split(' ');
-            //string[] line3 = {"1","1","3","4","1","2"};
-            string[] line3 = {"1","1","3","4","1","2"};
+            string[] line1 = Console.ReadLine().Split(' ');
+            int line2 = int.Parse(Console.ReadLine());
+            string[] line3 = Console.ReadLine().Split(' ');
             int buttonNum = int.Parse(line1[0]);
             int limit = int.Parse(line1[1]);
             int limitPoint = 0;
@@ -37,7 +34,6 @@ namespace c080
                 }
                 else
                 {   
-                    //Console.WriteLine("{0} {1}", (i + 1) % int.Parse(line1[0]), line3[i]);
                     if ((i + 1) % int.Parse(line1[0]) == int.Parse(line3[i]))
                     {
                         point += 1000;
@@ -46,13 +42,12 @@ namespace c080
                     {
                         limitPoint++;
                     }
-                    //Console.WriteLine((i + 1) % int.Parse(line1[0]));
                 }
 
-                //Console.WriteLine(limitPoint);
                 if (limit == limitPoint)
                 {
                     Console.WriteLine(-1);
+                    Environment.Exit(0);
                 }
             }
             Console.WriteLine(point);
