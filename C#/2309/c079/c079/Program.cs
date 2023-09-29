@@ -11,17 +11,25 @@ namespace c079
         static void Main(string[] args)
         {
             //string[] temp = Console.ReadLine().Split(' ');
-            string[] temp = { "6", "2" };
+            string[] temp = { "6", "3" };
             int count = int.Parse(temp[0]);
             int cards = int.Parse(temp[1]);
             Dictionary<int,int> map = new Dictionary<int,int>();
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < cards; i++)
             {
                 map.Add(i,0);
             }
-            foreach (int i in map.Keys)
+            for (int i = 0; i < count; i++)
             {
-                Console.WriteLine(map[i]);
+                int num = int.Parse(Console.ReadLine());
+                if (map.ContainsKey(num-1))
+                {
+                    map[num - 1] += 1;
+                }
+            }
+            foreach(KeyValuePair<int,int> item in map)
+            {
+                Console.WriteLine("{0},{1}",item.Key,item.Value);
             }
         }
     }
