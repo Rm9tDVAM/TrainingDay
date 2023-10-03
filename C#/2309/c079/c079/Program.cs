@@ -17,7 +17,7 @@ namespace c079
             Dictionary<int,int> map = new Dictionary<int,int>();
             for (int i = 0; i < cards; i++)
             {
-                map.Add(i,0);
+                //map.Add(i,0);
             }
             for (int i = 0; i < count; i++)
             {
