@@ -15,9 +15,10 @@ namespace c079
             int count = int.Parse(temp[0]);
             int cards = int.Parse(temp[1]);
             Dictionary<int,int> map = new Dictionary<int,int>();
+            int ans = 0;
             for (int i = 0; i < cards; i++)
             {
-                //map.Add(i,0);
+                map.Add(i,0);
             }
             for (int i = 0; i < count; i++)
             {
@@ -31,6 +32,19 @@ namespace c079
             {
                 Console.WriteLine("{0},{1}",item.Key,item.Value);
             }
+            for(int i = 0; i < map.Count; i++)
+            {
+                if (map[i] != 0)
+                {
+                    ans++;
+                }
+                else
+                {
+                    Console.WriteLine("unlucky");
+                    Environment.Exit(1);
+                }
+            }
+            Console.WriteLine(ans);
         }
     }
 }
