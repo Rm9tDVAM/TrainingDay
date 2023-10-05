@@ -37,7 +37,7 @@ namespace c079
 
                     if (ans == cards)
                     {
-                        Console.WriteLine(j + 1);
+                        Console.WriteLine(i + 1);
                         Environment.Exit(1);
                     }
                 }
