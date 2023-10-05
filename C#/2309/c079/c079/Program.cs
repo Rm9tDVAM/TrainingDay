@@ -27,24 +27,22 @@ namespace c079
                 {
                     map[num - 1] += 1;
                 }
-            }
-            foreach(KeyValuePair<int,int> item in map)
-            {
-                Console.WriteLine("{0},{1}",item.Key,item.Value);
-            }
-            for(int i = 0; i < map.Count; i++)
-            {
-                if (map[i] != 0)
+
+                for(int j= 0; j < map.Count; j++)
                 {
-                    ans++;
-                }
-                else
-                {
-                    Console.WriteLine("unlucky");
-                    Environment.Exit(1);
+                    if (map[i] != 0)
+                    {
+                        ans++;
+                    }
+
+                    if (ans == cards)
+                    {
+                        Console.WriteLine(j + 1);
+                        Environment.Exit(1);
+                    }
                 }
             }
-            Console.WriteLine(ans);
+            Console.WriteLine("unlucky");
         }
     }
 }
