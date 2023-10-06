@@ -10,16 +10,18 @@ namespace c079
     {
         static void Main(string[] args)
         {
-            //string[] temp = Console.ReadLine().Split(' ');
-            string[] temp = { "6", "3" };
+            string[] temp = Console.ReadLine().Split(' ');
             int count = int.Parse(temp[0]);
             int cards = int.Parse(temp[1]);
             Dictionary<int,int> map = new Dictionary<int,int>();
             int ans = 0;
+            string msg = "unlucky";
+
             for (int i = 0; i < cards; i++)
             {
                 map.Add(i,0);
             }
+
             for (int i = 0; i < count; i++)
             {
                 int num = int.Parse(Console.ReadLine());
@@ -28,21 +30,21 @@ namespace c079
                     map[num - 1] += 1;
                 }
 
+                ans = 0;
                 for(int j= 0; j < map.Count; j++)
                 {
-                    if (map[i] != 0)
+                    if (map[j] != 0)
                     {
                         ans++;
                     }
-
-                    if (ans == cards)
+                    
+                    if (ans == cards && msg == "unlucky" )
                     {
-                        Console.WriteLine(i + 1);
-                        Environment.Exit(1);
+                        msg = Convert.ToString(i + 1);
                     }
                 }
             }
-            Console.WriteLine("unlucky");
+            Console.WriteLine(msg);
         }
     }
 }
