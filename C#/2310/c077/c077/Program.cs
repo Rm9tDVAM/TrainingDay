@@ -16,15 +16,15 @@ namespace c077
             int quest = int.Parse(line[1]);
             int day = 0;
             int ans = 0;
-            line[0] = "-2 17";
-            line[1] = "-2 17";
-            line[2] = "-2 17";
+            string[] line2 = { "-2 17","-7 20","2 24"};
 
-            for ( int i = 1; i < loop; i++)
+            for ( int i = 0; i < loop; i++)
             {
-                line=Console.ReadLine().Split(' ');
-                day= int.Parse(line[0]);
-                ans= int.Parse(line[1]);
+                //line=Console.ReadLine().Split(' ');
+                line=line2[i].Split(' ');
+                day = int.Parse(line[0]);
+                ans = int.Parse(line[1]);
+                Console.WriteLine("{0},{1}",day,ans);
                 if (day >= 10)
                 {
                     Console.WriteLine("D");
