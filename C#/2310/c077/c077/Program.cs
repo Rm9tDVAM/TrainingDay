@@ -10,25 +10,44 @@ namespace c077
     {
         static void Main(string[] args)
         {
-            //string[] line = Console.ReadLine().Split(' ');
-            string[] line = { "3","25"};
+            string[] line = Console.ReadLine().Split(' ');
             int loop = int.Parse(line[0]);
-            int quest = int.Parse(line[1]);
-            int day = 0;
-            int ans = 0;
-            string[] line2 = { "-2 17","-7 20","2 24"};
+            double quest = double.Parse(line[1]);
 
             for ( int i = 0; i < loop; i++)
             {
-                //line=Console.ReadLine().Split(' ');
-                line=line2[i].Split(' ');
-                day = int.Parse(line[0]);
-                ans = int.Parse(line[1]);
-                Console.WriteLine("{0},{1}",day,ans);
+                line=Console.ReadLine().Split(' ');
+                int day = int.Parse(line[0]);
+                double ans = double.Parse(line[1]);
+                double temp = 0;
+                if (day > 0)
+                {
+                    temp = (ans / quest) * 0.8;
+                }
+                else
+                {
+                    temp = ans / quest;
+                }
+
                 if (day >= 10)
                 {
                     Console.WriteLine("D");
-                    Environment.Exit(0);
+                }
+                else if (temp >= 0.8)
+                {
+                    Console.WriteLine("A");
+                }
+                else if (temp >= 0.7)
+                {
+                    Console.WriteLine("B");
+                }
+                else if (temp >= 0.6)
+                {
+                    Console.WriteLine("C");
+                }
+                else
+                {
+                    Console.WriteLine("D");
                 }
             }
         }
