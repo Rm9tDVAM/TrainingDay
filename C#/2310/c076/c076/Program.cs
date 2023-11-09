@@ -18,11 +18,13 @@ namespace c076
             int payX = int.Parse(line1[0]);
             int payY = int.Parse(line1[1]);
             int payZ = int.Parse(line1[2]);
+            int x = 0;
+            int y = 0;
+            int z = 0;
             //int day = int.Parse(Console.ReadLine());
             //int day = 4;
             // int day = 7;
             int day = 1;
-            int ans = 0;
             //string[] temp = { "0 9","9 17","17 22","22 23" };
             //string[] temp = { "8 19","9 20","10 21","11 22","0 23","20 22","0 21" };
             string[] temp = { "9 17" };
