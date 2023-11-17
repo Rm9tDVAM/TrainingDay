@@ -13,23 +13,24 @@ namespace c074
     {
         static void Main(string[] args)
         {
-            //string[] line = Console.ReadLine().Split(' ');
-            string[] line = { "6","8","6" };
+            string[] line = Console.ReadLine().Split(' ');
             int count = int.Parse(line[0]);
             int length = int.Parse(line[2]);
             string tmp="";
-            string[] temp = { "My#name#","is#paiza",".#I#like","#program","ming#ver","y#ch.#" };
             for (int i = 0; i < count; i++)
             {
-                //tmp = tmp + Console.ReadLine();
-                tmp = tmp + temp[i];
+                tmp = tmp + Console.ReadLine();
             }
             for (int i = 0; i < tmp.Length; i += int.Parse(line[2]) ) 
             {
-                //Console.WriteLine("{0},{1}",i,tmp.Length);
-                //Console.WriteLine(tmp.Substring(i, int.Parse(line[2])));
-                //Console.WriteLine(tmp.Substring(i, tmp.Length));
-                Console.WriteLine(tmp.Substring(i,1));
+                if (i + int.Parse(line[2]) > tmp.Length)
+                {
+                    Console.WriteLine(tmp.Substring(i, tmp.Length-i));
+                }
+                else
+                {
+                    Console.WriteLine(tmp.Substring(i, int.Parse(line[2])));
+                }
             }
         }
     }
