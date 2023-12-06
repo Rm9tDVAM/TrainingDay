@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,26 +25,30 @@ namespace c070
                 {
                     Console.WriteLine("Three Card");
                 }
-                for (int j=0;j<line2.Length; j++)
-                {
-                    if (2 == line2.Count(f => (f == char.Parse(line2.Substring(i, 1)))))
-                    {
-                        pairCount++;
-                    }
-                }
-                if ( pairCount == 4 )
-                {
-                    Console.WriteLine("Two Pair");
-                }
-                else if( pairCount == 2 )
-                {
-                    Console.WriteLine("One Pair");
-                }
                 else
                 {
-                    Console.WriteLine("No Pair");
+                    for (int j=0;j<line2.Length; j++)
+                    {
+                        if (2 == line2.Count(f => (f == char.Parse(line2.Substring(j, 1)))))
+                        {
+                            pairCount++;
+                        }
+                    }
+                    if ( pairCount == 4 )
+                    {
+                        Console.WriteLine("Two Pair");
+                    }
+                    else if( pairCount == 2 )
+                    {
+                        Console.WriteLine("One Pair");
+                    }
+                    else
+                    {
+                        Console.WriteLine("No Pair");
+                    }
+                    pairCount = 0;
                 }
-            }
+           }
         }
     }
 }
