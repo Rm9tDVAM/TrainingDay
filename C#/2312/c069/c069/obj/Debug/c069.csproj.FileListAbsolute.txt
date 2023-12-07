@@ -1,0 +1,7 @@
+C:\Users\striker\source\repos\TrainingDay\C#\2312\c069\c069\bin\Debug\c069.exe.config
+C:\Users\striker\source\repos\TrainingDay\C#\2312\c069\c069\bin\Debug\c069.exe
+C:\Users\striker\source\repos\TrainingDay\C#\2312\c069\c069\bin\Debug\c069.pdb
+C:\Users\striker\source\repos\TrainingDay\C#\2312\c069\c069\obj\Debug\c069.csproj.AssemblyReference.cache
+C:\Users\striker\source\repos\TrainingDay\C#\2312\c069\c069\obj\Debug\c069.csproj.CoreCompileInputs.cache
+C:\Users\striker\source\repos\TrainingDay\C#\2312\c069\c069\obj\Debug\c069.exe
+C:\Users\striker\source\repos\TrainingDay\C#\2312\c069\c069\obj\Debug\c069.pdb
