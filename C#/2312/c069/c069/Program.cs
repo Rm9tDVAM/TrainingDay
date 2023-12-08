@@ -18,7 +18,15 @@ namespace c069
             //int d = int.Parse(ymd[2]);
             //int a = int.Parse(ab[0]);
             //int b = int.Parse(ab[1]);
-            Console.WriteLine((y)%4);
+            while (true)
+            {
+                y++;
+                if (y % 4 == 1)
+                {
+                    break;
+                }
+            }
+            Console.WriteLine(y);
         }
     }
 }
