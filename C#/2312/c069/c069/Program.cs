@@ -14,10 +14,12 @@ namespace c069
             //string[] ab = Console.ReadLine().Split(' ');
             //int y = int.Parse(ymd[0]);
             int y = 2000;
+            int yy = 0;
             //int m = int.Parse(ymd[1]);
             //int d = int.Parse(ymd[2]);
             //int a = int.Parse(ab[0]);
             //int b = int.Parse(ab[1]);
+            yy = y;
             while (true)
             {
                 y++;
@@ -26,7 +28,7 @@ namespace c069
                     break;
                 }
             }
-            Console.WriteLine(y);
+            Console.WriteLine(y-yy);
         }
     }
 }
