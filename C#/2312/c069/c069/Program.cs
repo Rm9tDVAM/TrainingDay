@@ -34,11 +34,20 @@ namespace c069
                     break;
                 }
             }
-            con(yy,y);
+            ans = getDays(m)-d;
+            ans += b;
+            Console.WriteLine(ans);
         }
-        private void con(int yy,int y)
+        private static int getDays(int m)
         {
-            Console.WriteLine();
+            if (m % 2 == 0)
+            {
+                return 15;
+            }
+            else
+            {
+                return 13;
+            }
         }
     }
 }
