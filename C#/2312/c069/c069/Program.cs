@@ -34,7 +34,20 @@ namespace c069
                     break;
                 }
             }
-            ans = getDays(m)-d;
+
+            for(int i = m+1; i <= 13; i++)
+            {
+                ans += getDays(i);
+            }
+
+            for(int i = 1; i < a; i++)
+            {
+                ans += getDays(i);
+            }
+            Console.WriteLine("{0},{1}",y,yy);
+            
+            ans += 181 * (y-yy+1);
+            ans += getDays(m)-d;
             ans += b;
             Console.WriteLine(ans);
         }
