@@ -11,21 +11,16 @@ namespace c069
     {
         static void Main(string[] args)
         {
-            //string[] ymd = Console.ReadLine().Split(' ');
-            //string[] ab = Console.ReadLine().Split(' ');
-            //int y = int.Parse(ymd[0]);
-            int y = 2000;
+            string[] ymd = Console.ReadLine().Split(' ');
+            string[] ab = Console.ReadLine().Split(' ');
+            int y = int.Parse(ymd[0]);
             int yy = 0;
-            //int m = int.Parse(ymd[1]);
-            int m = 12;
-            //int d = int.Parse(ymd[2]);
-            int d = 10;
-            //int a = int.Parse(ab[0]);
-            int a = 1;
-            //int b = int.Parse(ab[1]);
-            int b = 10;
+            int m = int.Parse(ymd[1]);
+            int d = int.Parse(ymd[2]);
+            int a = int.Parse(ab[0]);
+            int b = int.Parse(ab[1]);
             int ans = 0;
-            yy = y;
+            yy = y + 1;
             while (true)
             {
                 y++;
@@ -44,9 +39,8 @@ namespace c069
             {
                 ans += getDays(i);
             }
-            Console.WriteLine("{0},{1}",y,yy);
             
-            ans += 181 * (y-yy+1);
+            ans += 181 * (y-yy);
             ans += getDays(m)-d;
             ans += b;
             Console.WriteLine(ans);
