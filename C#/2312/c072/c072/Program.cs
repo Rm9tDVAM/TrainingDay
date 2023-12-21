@@ -30,7 +30,9 @@ namespace c072
                 int MAXDEF = int.Parse(line2[4]);
                 int MINAGI = int.Parse(line2[5]);
                 int MAXAGI = int.Parse(line2[6]);
-                if(MINATK <= ATK && MAXATK >= ATK && MINDEF <= DEF && MAXDEF >= DEF && MINAGI <= AGI && MAXAGI >= AGI){
+                Console.WriteLine(s);
+                if(MINATK <= ATK && MAXATK >= ATK && MINDEF <= DEF && MAXDEF >= DEF && MINAGI <= AGI && MAXAGI >= AGI)
+                {
                     list.Add(s);
                 }
             }
