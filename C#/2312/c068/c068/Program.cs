@@ -14,6 +14,14 @@ namespace c068
             int N = 4;
             //string S = Console.ReadLine();
             string S = "QEPG";
+            // A=65, Z=90
+            for(int i=0; i<S.Length; i++)
+            {
+                if(i%2 == 0)
+                {
+
+                }
+            }
         }
     }
 }
