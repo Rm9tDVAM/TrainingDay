@@ -25,7 +25,7 @@ namespace c068
                 {
                     if ( 65 > (int)char.Parse(S.Substring(i,1))-N)
                     {
-                        Console.WriteLine(95 - ( 66 - (int)char.Parse(S.Substring(i,1))-N));
+                        Console.WriteLine( 65 - (int)char.Parse(S.Substring(i,1))-N );
 
                         //Console.WriteLine(65 - ((int)char.Parse(S.Substring(i,1))-N));
                     }
