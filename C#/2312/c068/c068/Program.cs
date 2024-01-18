@@ -17,7 +17,7 @@ namespace c068
             //string S = Console.ReadLine();
             //string S = "QEPG";
             //string S = "KXKPMQVI";
-            string S = "B";
+            string S = "A";
             // A=65, Z=90
             for(int i=0; i<S.Length; i++)
             {
@@ -25,9 +25,8 @@ namespace c068
                 {
                     if ( 65 > (int)char.Parse(S.Substring(i,1))-N)
                     {
-                        Console.WriteLine( 65 - (int)char.Parse(S.Substring(i,1))-N+1 );
-
-                        //Console.WriteLine(65 - ((int)char.Parse(S.Substring(i,1))-N));
+                        Console.WriteLine((int)char.Parse(S.Substring(i,1)));
+                        Console.WriteLine(65 - ((int)char.Parse(S.Substring(i,1))-N));
                     }
                     else
                     {
