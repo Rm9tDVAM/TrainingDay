@@ -10,7 +10,8 @@ namespace c068
     {
         static void Main(string[] args)
         {
-            //int N = int.Parse(Console.ReadLine());
+            int N = int.Parse(Console.ReadLine());
+            string[] atz = new string[26];
             //int N = 4;
             //int N = 19;
             int N = 2;
