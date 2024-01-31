@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,8 +11,12 @@ namespace c068
     {
         static void Main(string[] args)
         {
-            int N = int.Parse(Console.ReadLine());
-            string[] atz = new string[26];
+            List<char> atz = new List<char>();
+            for(char c= 'A'; c<= 'Z'; c++)
+            {
+                atz.Add c;
+            }
+            //int N = int.Parse(Console.ReadLine());
             //int N = 4;
             //int N = 19;
             int N = 2;
