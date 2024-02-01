@@ -11,37 +11,32 @@ namespace c068
     {
         static void Main(string[] args)
         {
-            List<char> atz = new List<char>();
+            List<char> az = new List<char>();
             for(char c= 'A'; c<= 'Z'; c++)
             {
-                atz.Add c;
+                az.Add (c);
             }
-            //int N = int.Parse(Console.ReadLine());
-            //int N = 4;
-            //int N = 19;
             int N = 2;
             //string S = Console.ReadLine();
             //string S = "QEPG";
             //string S = "KXKPMQVI";
-            string S = "A";
-            // A=65, Z=90
+            string S = "C";
+            // A=az[0], Z=az[25]
             for(int i=0; i<S.Length; i++)
             {
                 if(i%2 == 0)
                 {
-                    if ( 65 > (int)char.Parse(S.Substring(i,1))-N)
+                    if (az.IndexOf(S[i])-(N-1) < 0)
                     {
-                        Console.WriteLine((int)char.Parse(S.Substring(i,1)));
-                        Console.WriteLine(65 - ((int)char.Parse(S.Substring(i,1))-N));
+                        Console.WriteLine(az.IndexOf(S[i])-(N-1));
                     }
                     else
                     {
-                        //Console.Write((char)((int)char.Parse(S.Substring(i,1))-N));
+                        Console.WriteLine(az.IndexOf(S[i])-(N-1));
                     }
                 }
                 else
                 {
-                    //Console.Write((char)((int)char.Parse(S.Substring(i,1))+N));
                 }
             }
         }
