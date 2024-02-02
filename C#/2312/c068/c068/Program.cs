@@ -16,7 +16,7 @@ namespace c068
             {
                 az.Add (c);
             }
-            int N = 2;
+            int N = 4;
             //string S = Console.ReadLine();
             //string S = "QEPG";
             //string S = "KXKPMQVI";
@@ -26,13 +26,17 @@ namespace c068
             {
                 if(i%2 == 0)
                 {
-                    if (az.IndexOf(S[i])-(N-1) < 0)
+                    if (az.IndexOf(S[i])-(N) < 0)
                     {
-                        Console.WriteLine(az.IndexOf(S[i])-(N-1));
+                        Console.WriteLine(true);
+                        Console.WriteLine(az.IndexOf(S[i])-(N));
+                        Console.WriteLine(26 + (az.IndexOf(S[i])-(N)));
+                        Console.WriteLine(az[26 + (az.IndexOf(S[i])-(N))]);
                     }
                     else
                     {
-                        Console.WriteLine(az.IndexOf(S[i])-(N-1));
+                        Console.WriteLine(false);
+                        Console.WriteLine(az[az.IndexOf(S[i])-(N)]);
                     }
                 }
                 else
