@@ -1,0 +1,7 @@
+C:\Users\striker\source\repos\TrainingDay\C#\2402\d276\d276\bin\Debug\d276.exe.config
+C:\Users\striker\source\repos\TrainingDay\C#\2402\d276\d276\bin\Debug\d276.exe
+C:\Users\striker\source\repos\TrainingDay\C#\2402\d276\d276\bin\Debug\d276.pdb
+C:\Users\striker\source\repos\TrainingDay\C#\2402\d276\d276\obj\Debug\d276.csproj.AssemblyReference.cache
+C:\Users\striker\source\repos\TrainingDay\C#\2402\d276\d276\obj\Debug\d276.csproj.CoreCompileInputs.cache
+C:\Users\striker\source\repos\TrainingDay\C#\2402\d276\d276\obj\Debug\d276.exe
+C:\Users\striker\source\repos\TrainingDay\C#\2402\d276\d276\obj\Debug\d276.pdb
