@@ -15,13 +15,19 @@ namespace c067
             // 1 ≦ X < 2^31
             //string[] line = Console.ReadLine().Split(' ');
             string[] line = { "3", "44" };
-            int N = int.Parse(line[0]); 
+            int N = int.Parse(line[0]);
+            List<int> list = new List<int>();
             string binary = Convert.ToString(int.Parse(line[1]),2);
             for ( int i = 0; i < binary.Length; i++ )
             {
-                Console.WriteLine(binary[i]);
+                //Console.WriteLine(binary[i]);
+                list.Add((int)binary[i]);
             }
 
+            foreach (int i in list )
+            {
+                Console.WriteLine(i);
+            }
             for (int i = 0; i < N; i++) 
             {
                 //int a = int.Parse(Console.ReadLine())-1;
