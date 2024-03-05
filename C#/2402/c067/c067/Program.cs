@@ -13,34 +13,26 @@ namespace c067
             // 1 ≦ N ≦ 32
             // 1 ≦ k_i ≦ 32 (1 ≦ i ≦ N)
             // 1 ≦ X < 2^31
-            //string[] line = Console.ReadLine().Split(' ');
-            string[] line = { "3", "44" };
-            //int N = int.Parse(line[0]);
-            int N = 1;
-            List<int> list = new List<int>();
+            string[] line = Console.ReadLine().Split(' ');
+            //string[] line = { "3", "44" };
+            int N = int.Parse(line[0]);
+            //int N = 1;
             string binary = Convert.ToString(int.Parse(line[1]),2);
             Console.WriteLine(binary);
-            string temp = "";
+            List<char> list = new List<char>();
             for (int i =0; i < binary.Length; i++)
             {
-                temp = temp + binary.Substring(i);
+                list.Add(binary[i]);
+            }
+            foreach (char c in list) {
+                Console.WriteLine(c);
             }
 
-            Console.WriteLine(temp); 
-
-            for (int i =0; i < temp.Length; i++)
-            {
-                //Console.Write(i);
-                //Console.WriteLine(temp[i]);
-
-            }
             int k = 0;
             for (int i = 0; i < N; i++)
             {
-                k = int.Parse(Console.ReadLine());
-
-
-
+                k = int.Parse(Console.ReadLine())-1;
+                Console.WriteLine(list[k]);
             }
         }
     }
