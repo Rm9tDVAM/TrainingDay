@@ -14,27 +14,41 @@ namespace c066
             //1 ≦ N ≦ 10
             //1 ≦ x ≦ 100
             //1 ≦ w_i ≦ 25(1 ≦ i ≦ M)
-            //string[] line = Console.ReadLine().Split(' ');
-            string[] line = {"5","2","10" };
+            string[] line = Console.ReadLine().Split(' ');
             int M = int.Parse(line[0]);
             int N = int.Parse(line[1])-1;
             int x = int.Parse(line[2]);
+            int tmp = x;
             int w = 0;
             int cnt = 0;
-            int[] line2 = {5,5,3,1,4};
+            List<int> wArray = new List<int>();
+
             for (int i = 0 ; i < M ; i++)
             {
-                //w = int.Parse(Console.ReadLine());
-                w = line2[i];
-                if ( x - w >= 1)
+                wArray.Add(int.Parse(Console.ReadLine()));
+            }
+
+            for (int i = 0 ; i < wArray.Count ; i++)
+            {
+                w = wArray[i];
+                if ( x - w > 0)
                 {
                     x -= w; cnt++;
                 }
                 else
                 {
-
+                    if ( N == 0)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        N--;
+                        x = tmp; i--;
+                    }
                 }
             }
+            Console.WriteLine(cnt);
         }
     }
 }
