@@ -10,9 +10,12 @@ namespace c065
     {
         static void Main(string[] args)
         {
+            // 1 ≦ N ≦ 10
+            // o_i は半角記号で ">", "<", "/" のいずれか
+            // 1 ≦ x_i ≦ 100 
             //int N = int.Parse(Console.ReadLine());
             int N = 3;
-            int ans = 0;
+            int cnt = 0;
             List<string> list = new List<string>();
             for ( int i = 0; i < N; i++ )
             {
@@ -23,13 +26,29 @@ namespace c065
             list.Add("/ 5");
             for ( int i = 1;i < 100; i++)
             {
-                foreach ( string s in list)
+                for ( int j = 0;j<list.Count; j++)
                 {
-                if (s.IndexOf(">") != -1 )
+                    if (s.IndexOf(">") != -1 )
                     {
-
+                        if ( i > int.Parse(s.Substring(s.IndexOf(" ") + 1)))
+                        {
+                            cnt++;
+                        }
                     }
-
+                    else if (s.IndexOf("<") != -1 )
+                    {
+                        if ( i < int.Parse(s.Substring(s.IndexOf(" ") + 1)))
+                        {
+                            cnt++;
+                        }
+                    }
+                    else if (s.IndexOf("/") != -1 )
+                    {
+                        if ( i % int.Parse(s.Substring(s.IndexOf(" ") + 1)) == 0 )
+                        {
+                            cnt++;
+                        }
+                    }
                 }
             }
         }
