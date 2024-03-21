@@ -1,0 +1,7 @@
+C:\Users\striker\source\repos\TrainingDay\C#\d283\d283\bin\Debug\d283.exe.config
+C:\Users\striker\source\repos\TrainingDay\C#\d283\d283\bin\Debug\d283.exe
+C:\Users\striker\source\repos\TrainingDay\C#\d283\d283\bin\Debug\d283.pdb
+C:\Users\striker\source\repos\TrainingDay\C#\d283\d283\obj\Debug\d283.csproj.AssemblyReference.cache
+C:\Users\striker\source\repos\TrainingDay\C#\d283\d283\obj\Debug\d283.csproj.CoreCompileInputs.cache
+C:\Users\striker\source\repos\TrainingDay\C#\d283\d283\obj\Debug\d283.exe
+C:\Users\striker\source\repos\TrainingDay\C#\d283\d283\obj\Debug\d283.pdb
