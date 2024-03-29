@@ -16,7 +16,8 @@ namespace c064
             string[] line = {"3","3"};
             int M = int.Parse(line[0]);
             int N = int.Parse(line[1]);
-            int Ans = 0;
+            string[] tmp;
+            int ans = 0;
 
             for ( int i = 0; i < M; i++ )
             {
@@ -25,6 +26,11 @@ namespace c064
             cList.Add(250);
             cList.Add(500);
             cList.Add(1000);
+
+            for ( int i =0 ; i < cList.Count; i++ )
+            {
+                cList[i] = cList[i] * 0.01;
+            }
 
             for ( int i =0 ; i < N; i++ )
             {
@@ -36,10 +42,13 @@ namespace c064
 
             for ( int i =0 ;i < aList.Count; i++ ) 
             {
-                Console.WriteLine(aList[i]);
+                //Console.WriteLine(aList[i]);
+                tmp = aList[i].Split(' ');
                 for ( int j = 0 ; j < cList.Count; j++)
                 {
-
+                    //Console.WriteLine(cList[j]);
+                    //Console.WriteLine(tmp[j]);
+                    Console.WriteLine(cList[j] * double.Parse(tmp[j]));
                 }
             }
         }
