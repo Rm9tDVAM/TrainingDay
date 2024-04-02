@@ -1,0 +1,7 @@
+C:\Users\striker\source\repos\TrainingDay\C#\d285\d285\bin\Debug\d285.exe.config
+C:\Users\striker\source\repos\TrainingDay\C#\d285\d285\bin\Debug\d285.exe
+C:\Users\striker\source\repos\TrainingDay\C#\d285\d285\bin\Debug\d285.pdb
+C:\Users\striker\source\repos\TrainingDay\C#\d285\d285\obj\Debug\d285.csproj.AssemblyReference.cache
+C:\Users\striker\source\repos\TrainingDay\C#\d285\d285\obj\Debug\d285.csproj.CoreCompileInputs.cache
+C:\Users\striker\source\repos\TrainingDay\C#\d285\d285\obj\Debug\d285.exe
+C:\Users\striker\source\repos\TrainingDay\C#\d285\d285\obj\Debug\d285.pdb

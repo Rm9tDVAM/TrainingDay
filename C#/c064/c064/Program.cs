@@ -12,8 +12,7 @@ namespace c064
         {
             List<double> cList = new List<double>();
             List<string> aList = new List<string>();
-            //string[] line = Console.ReadLine().Split(' ');
-            string[] line = {"3","3"};
+            string[] line = Console.ReadLine().Split(' ');
             int M = int.Parse(line[0]);
             int N = int.Parse(line[1]);
             string[] tmp;
@@ -21,11 +20,8 @@ namespace c064
 
             for ( int i = 0; i < M; i++ )
             {
-                //cList.Add(double.Parse(Console.ReadLine()));
+                cList.Add(double.Parse(Console.ReadLine()));
             }
-            cList.Add(250);
-            cList.Add(500);
-            cList.Add(1000);
 
             for ( int i =0 ; i < cList.Count; i++ )
             {
@@ -34,22 +30,18 @@ namespace c064
 
             for ( int i =0 ; i < N; i++ )
             {
-                //aList.Add(Console.ReadLine());
+                aList.Add(Console.ReadLine());
             }
-            aList.Add("100 200 300");
-            aList.Add("30 250 0");
-            aList.Add("1 1 1000");
 
             for ( int i =0 ;i < aList.Count; i++ ) 
             {
-                //Console.WriteLine(aList[i]);
                 tmp = aList[i].Split(' ');
                 for ( int j = 0 ; j < cList.Count; j++)
                 {
-                    //Console.WriteLine(cList[j]);
-                    //Console.WriteLine(tmp[j]);
-                    Console.WriteLine(cList[j] * double.Parse(tmp[j]));
+                    ans += (int)(cList[j] * double.Parse(tmp[j]));
                 }
+                Console.WriteLine(ans);
+                ans = 0;
             }
         }
     }
