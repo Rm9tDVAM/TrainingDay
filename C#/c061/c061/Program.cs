@@ -13,38 +13,42 @@ namespace c061
     {
         static void Main(string[] args)
         {
-            // 1 ≦ A, B ≦ 999
             string[] line = Console.ReadLine().Split(' ');
             string A = line[0];
             string B = line[1];
-            //string A = "123";
-            //string B = "8";
             List<int> aList = new List<int>();
             List<int> bList = new List<int>();
+            List<int> ansList = new List<int>();
             string tmp;
+            int maxLength = Math.Max(A.Length, B.Length);
 
-            ReverseList(A,aList);
-            ReverseList(B,bList);
+            ReverseList(A,aList,maxLength);
+            ReverseList(B,bList,maxLength);
 
-            for ( int i = 0; i < 3; i++)
+            for ( int i = 0; i < maxLength; i++)
             {
-                //Console.WriteLine("{0},{1}", aList[i], bList[i]);
                 tmp = (aList[i] + bList[i]).ToString();
-                Console.Write(tmp.Substring(0,1));
+                ansList.Add((int.Parse(tmp.Substring(tmp.Length -1, 1))));
             }
+
+            foreach ( int i in ansList)
+            {
+                Console.Write(i);
+            }
+
         }
-        static void ReverseList(string A,List<int> list)
+        static void ReverseList(string str,List<int> list,int maxLength)
         {
-            int offset = 3 - A.Length;
+            int offset = maxLength - str.Length;
 
             for (int i = 0; i < offset; i++)
             {
                 list.Add(0);
             }
 
-            for (int i = 0; i < A.Length; i++)
+            for (int i = 0; i < str.Length; i++)
             {
-                list.Add(int.Parse(A.Substring(i,1)));
+                list.Add(int.Parse(str.Substring(i,1)));
             }
         }
     }
