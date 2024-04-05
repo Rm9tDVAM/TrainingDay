@@ -15,17 +15,14 @@ namespace c059
             //・(b_i の長さ) = 4
             //・b_i は "0" または "1" で構成される文字列である
 
-            //int N = int.Parse(Console.ReadLine());
-            int N = 2;
+            int N = int.Parse(Console.ReadLine());
             int tmp = 0;
             List<string> bList = new List<string>();
 
             for ( int i = 0; i < N; i++)
             {
-                //bList.Add(Console.ReadLine()) ;
+                bList.Add(Console.ReadLine()) ;
             }
-            bList.Add("0011") ;
-            bList.Add("0110") ;
 
             for( int i = 0; i < 4; i++)
             {
@@ -36,11 +33,11 @@ namespace c059
 
                 if (tmp % 2 == 0)
                 {
-                    Console.WriteLine(0);
+                    Console.Write(0);
                 }
                 else
                 {
-                    Console.WriteLine(1);
+                    Console.Write(1);
                 }
                 tmp = 0;
             }
