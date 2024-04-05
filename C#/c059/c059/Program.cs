@@ -10,6 +10,40 @@ namespace c059
     {
         static void Main(string[] args)
         {
+            //・2 ≦ N ≦ 50
+            //・各 i(1 ≦ i ≦ N) について、以下をみたす
+            //・(b_i の長さ) = 4
+            //・b_i は "0" または "1" で構成される文字列である
+
+            //int N = int.Parse(Console.ReadLine());
+            int N = 2;
+            int tmp = 0;
+            List<string> bList = new List<string>();
+
+            for ( int i = 0; i < N; i++)
+            {
+                //bList.Add(Console.ReadLine()) ;
+            }
+            bList.Add("0011") ;
+            bList.Add("0110") ;
+
+            for( int i = 0; i < 4; i++)
+            {
+                for( int j = 0; j < bList.Count; j++)
+                {
+                    tmp += int.Parse(bList[j].Substring(i,1));
+                }
+
+                if (tmp % 2 == 0)
+                {
+                    Console.WriteLine(0);
+                }
+                else
+                {
+                    Console.WriteLine(1);
+                }
+                tmp = 0;
+            }
         }
     }
 }
