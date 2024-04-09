@@ -12,9 +12,7 @@ namespace c063
         {
             //・1 ≦ N ≦ 30
             //・1 ≦ a_i, b_i ≦ 30(1 ≦ i ≦ N)
-
-            //int N = int.Parse(Console.ReadLine());
-            int N = 4;
+            int N = int.Parse(Console.ReadLine());
             int a = 0;
             int b = 0;
             int[] days = new int[60];
@@ -23,16 +21,14 @@ namespace c063
 
             for (int i = 0; i < N; i++) 
             {
-                //list.Add(Console.ReadLine());
+                list.Add(Console.ReadLine());
             }
-            //list.Add("1 3");list.Add("2 2");list.Add("1 1");list.Add("1 2");
-            list.Add("1 3");list.Add("2 2");list.Add("2 1");list.Add("1 2");
 
             for (int i = 0;i < list.Count; i++)
             {
                 a = int.Parse(list[i].Substring(0,1));
                 b = int.Parse(list[i].Substring(2,1));
-                days[i + b] += a;
+                days[b -1 + a] ++;
             }
 
             foreach (int i in days)
@@ -45,6 +41,7 @@ namespace c063
                 if (days[i] == max)
                 {
                     Console.WriteLine(i + 1);
+                    Environment.Exit(0);
                 }
             }
         }
