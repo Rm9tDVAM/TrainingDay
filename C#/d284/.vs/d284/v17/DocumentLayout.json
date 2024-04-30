@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\striker\\source\\repos\\TrainingDay\\C#\\d284\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B7D39B95-72AC-491F-9A46-5B53C95565C5}|d284\\d284.csproj|c:\\users\\striker\\source\\repos\\trainingday\\c#\\d284\\d284\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7D39B95-72AC-491F-9A46-5B53C95565C5}|d284\\d284.csproj|solutionrelative:d284\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\striker\\source\\repos\\TrainingDay\\C#\\d284\\d284\\Program.cs",
+              "RelativeDocumentMoniker": "d284\\Program.cs",
+              "ToolTip": "C:\\Users\\striker\\source\\repos\\TrainingDay\\C#\\d284\\d284\\Program.cs",
+              "RelativeToolTip": "d284\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T03:30:58.319Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
