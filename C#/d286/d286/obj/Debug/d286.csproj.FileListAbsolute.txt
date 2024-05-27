@@ -1,0 +1,7 @@
+C:\Users\striker\source\repos\d286\d286\bin\Debug\d286.exe.config
+C:\Users\striker\source\repos\d286\d286\bin\Debug\d286.exe
+C:\Users\striker\source\repos\d286\d286\bin\Debug\d286.pdb
+C:\Users\striker\source\repos\d286\d286\obj\Debug\d286.csproj.AssemblyReference.cache
+C:\Users\striker\source\repos\d286\d286\obj\Debug\d286.csproj.CoreCompileInputs.cache
+C:\Users\striker\source\repos\d286\d286\obj\Debug\d286.exe
+C:\Users\striker\source\repos\d286\d286\obj\Debug\d286.pdb

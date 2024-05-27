@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\striker\\source\\repos\\TrainingDay\\C#\\c066\\",
+  "WorkspaceRootPath": "C:\\Users\\striker\\source\\repos\\d286\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{19EC66AC-C983-4A0A-A422-A6B29DE6096B}|c066\\c066.csproj|c:\\users\\striker\\source\\repos\\trainingday\\c#\\c066\\c066\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19EC66AC-C983-4A0A-A422-A6B29DE6096B}|c066\\c066.csproj|solutionrelative:c066\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3ADCB5E1-1DAE-46F3-96E6-DC4DCFD967C9}|d286\\d286.csproj|c:\\users\\striker\\source\\repos\\d286\\d286\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3ADCB5E1-1DAE-46F3-96E6-DC4DCFD967C9}|d286\\d286.csproj|solutionrelative:d286\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,13 +40,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\striker\\source\\repos\\TrainingDay\\C#\\c066\\c066\\Program.cs",
-              "RelativeDocumentMoniker": "c066\\Program.cs",
-              "ToolTip": "C:\\Users\\striker\\source\\repos\\TrainingDay\\C#\\c066\\c066\\Program.cs",
-              "RelativeToolTip": "c066\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAowDMAAAAJAAAA",
+              "DocumentMoniker": "C:\\Users\\striker\\source\\repos\\d286\\d286\\Program.cs",
+              "RelativeDocumentMoniker": "d286\\Program.cs",
+              "ToolTip": "C:\\Users\\striker\\source\\repos\\d286\\d286\\Program.cs",
+              "RelativeToolTip": "d286\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T03:43:22.584Z",
+              "WhenOpened": "2024-04-28T03:15:54.119Z",
               "EditorCaption": ""
             }
           ]
