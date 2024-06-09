@@ -19,7 +19,6 @@ namespace d287
             }
             else
             {
-//test
                 Console.WriteLine(B);
             }
         }
