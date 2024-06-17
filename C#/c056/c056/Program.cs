@@ -19,12 +19,19 @@ namespace c056
 
             for (int i = 0; i < N; i++)
             {
-                list.Add(line[i]);
+                list.Add(Console.ReadLine());
             }
 
             for (int i = 0; i < list.Count; i++)
-            { 
+            {
+                line = list[i].Split(' ');
+                a_i = int.Parse(line[0]);
+                b_i = int.Parse(line[1]);
 
+                if (a_i - ( b_i * 5 ) >= M ) 
+                {
+                    Console.WriteLine(i + 1);
+                }
             }
         }
     }
