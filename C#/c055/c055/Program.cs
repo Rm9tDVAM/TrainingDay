@@ -13,6 +13,7 @@ namespace c055
             int N = int.Parse(Console.ReadLine());
             string G = Console.ReadLine();
             List<string> list = new List<string>();
+            int cnt = 0;
 
             for (int i = 0; i < N; i++)
             {
@@ -21,6 +22,19 @@ namespace c055
 
             for (int i = 0; i < list.Count; i++)
             {
+                if (list[i].Contains(G))
+                {
+                    Console.WriteLine(list[i]);
+                }
+                else
+                {
+                    cnt++;
+                }
+            }
+
+            if (cnt == N)
+            {
+                Console.WriteLine("None");
             }
         }
     }
