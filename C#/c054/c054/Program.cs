@@ -11,6 +11,7 @@ namespace c054
         static void Main(string[] args)
         {
             string[] line = Console.ReadLine().Split(' ');
+            List<string> list = new List<string>();
             int N = int.Parse(line[0]);
             int V = int.Parse(line[1]);
             int t_i = 0;
@@ -18,7 +19,12 @@ namespace c054
 
             for (int i = 0; i < N; i++)
             {
-                line = Console.ReadLine().Split(' ');
+                list.Add(Console.ReadLine());
+            }
+
+            for (int i = 1; i < list.Count; i++)
+            {
+                line = list[i - 1].Split(' ');
                 t_i = int.Parse(line[0]);
                 p_i = int.Parse(line[1]);
             }
