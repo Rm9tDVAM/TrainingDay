@@ -18,7 +18,7 @@ namespace c052
             int W = int.Parse(line[1]);
             line = Console.ReadLine().Split(' ');
             int dy = int.Parse(line[0]);
-            int dx = int.Parse(line[0]);
+            int dx = int.Parse(line[1]);
 
             Console.WriteLine(H * dy);
             Console.WriteLine(W * dx);
