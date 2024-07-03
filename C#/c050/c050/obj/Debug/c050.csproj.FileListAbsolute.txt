@@ -1,0 +1,7 @@
+C:\Users\swift\source\repos\TrainingDay\C#\c050\c050\bin\Debug\c050.exe.config
+C:\Users\swift\source\repos\TrainingDay\C#\c050\c050\bin\Debug\c050.exe
+C:\Users\swift\source\repos\TrainingDay\C#\c050\c050\bin\Debug\c050.pdb
+C:\Users\swift\source\repos\TrainingDay\C#\c050\c050\obj\Debug\c050.csproj.AssemblyReference.cache
+C:\Users\swift\source\repos\TrainingDay\C#\c050\c050\obj\Debug\c050.csproj.CoreCompileInputs.cache
+C:\Users\swift\source\repos\TrainingDay\C#\c050\c050\obj\Debug\c050.exe
+C:\Users\swift\source\repos\TrainingDay\C#\c050\c050\obj\Debug\c050.pdb
