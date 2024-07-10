@@ -19,14 +19,18 @@ namespace c050
 
             while (true) 
             {
-                if (cnt%2 == 1)
+                Console.WriteLine(cnt);
+                if (cnt%2 == 1 || S + 10 <= a) 
                 {
-                    Console.WriteLine(cnt);
+                    S += 10;
+                }
+                else
+                {
 
                 }
+
                 if (cnt == 10) { break; }
                 cnt++;
-
             }
         }
     }
