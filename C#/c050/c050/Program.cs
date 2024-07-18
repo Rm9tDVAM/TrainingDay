@@ -10,7 +10,8 @@ namespace c050
     {
         static void Main(string[] args)
         {
-            string[] line = Console.ReadLine().Split(' ');
+            // string[] line = Console.ReadLine().Split(' ');
+            string[] line = new string[] {"1","1500","2050"};
             int S = int.Parse(line[0]);
             int a = int.Parse(line[1]);
             int b = int.Parse(line[2]);
@@ -19,17 +20,18 @@ namespace c050
 
             while (true) 
             {
-                Console.WriteLine(cnt);
-                if (cnt%2 == 1 || S + 10 <= a) 
+                Console.WriteLine("cnt:{0} S:{1}",cnt,S);
+                if (cnt % 2 == 1 && S + 10 <= a)
                 {
                     S += 10;
                 }
-                else
-                {
 
+                else if (cnt % 2 == 0 && S + 1000 <= b);
+                { 
+                    S += 1000;
                 }
 
-                if (cnt == 10) { break; }
+                if (cnt == 20) { break; }
                 cnt++;
             }
         }
