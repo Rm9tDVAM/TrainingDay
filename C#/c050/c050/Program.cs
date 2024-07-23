@@ -20,20 +20,30 @@ namespace c050
 
             while (true) 
             {
-                Console.WriteLine("cnt:{0} S:{1}",cnt,S);
-                if (cnt % 2 == 1 && S + 10 <= a)
+                if (cnt %2 == 1)
                 {
-                    S += 10;
+                    if (S + 10 <= a)
+                    {
+                        S += 10;
+                    }
+                    else
+                    {
+                        break;
+                    }
                 }
-
-                else if (cnt % 2 == 0 && S + 1000 <= b);
-                { 
-                    S += 1000;
+                else
+                {
+                    if (S + 1000 <= b)
+                    {
+                        S += 1000;
+                    }
+                    else
+                    {
+                        break;
+                    }
                 }
-
-                if (cnt == 20) { break; }
-                cnt++;
             }
+            Console.WriteLine(S);
         }
     }
 } 
