@@ -1,0 +1,7 @@
+C:\Users\swift\source\repos\TrainingDay\C#\d320\d320\bin\Debug\d320.exe.config
+C:\Users\swift\source\repos\TrainingDay\C#\d320\d320\bin\Debug\d320.exe
+C:\Users\swift\source\repos\TrainingDay\C#\d320\d320\bin\Debug\d320.pdb
+C:\Users\swift\source\repos\TrainingDay\C#\d320\d320\obj\Debug\d320.csproj.AssemblyReference.cache
+C:\Users\swift\source\repos\TrainingDay\C#\d320\d320\obj\Debug\d320.csproj.CoreCompileInputs.cache
+C:\Users\swift\source\repos\TrainingDay\C#\d320\d320\obj\Debug\d320.exe
+C:\Users\swift\source\repos\TrainingDay\C#\d320\d320\obj\Debug\d320.pdb
